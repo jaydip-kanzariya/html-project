@@ -1,0 +1,382 @@
+
+@media(max-width:1200px)
+{
+
+     section{
+        margin: 0;
+        padding: 0 20px;
+     }
+    .nav-link
+    {
+        display: none;
+    }
+
+    .nav-info .bar
+    {
+    display: flex;
+    align-items: center;
+    }
+
+    .nav-info .logo
+    {
+        display: none;
+    }
+    
+    .nav-info .location
+    {
+        display: none;
+    }
+
+    .menubar
+    {
+        display: none;
+    }
+    .sec
+    {
+        margin: 0;
+    }
+
+    .footer-link
+    {
+        margin: 10px;
+    }
+    .footer-link .f-l1
+{
+    width: 25%;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footre-icon
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px 0;
+}
+.footer-link
+{
+    flex-direction: column;
+}
+.footer-link .f-l1
+{
+    width: 100%;
+}
+.footer-i-l
+{
+    width: 100%;
+}
+
+.footr-i-r
+{
+    width: 100%;
+display: flex;
+justify-content:left;
+gap: 25px;
+align-items: center;
+background-color: white;
+padding: 10px 0;
+}
+
+
+.footer-pay
+{
+    display: block;
+    margin: 20px;
+}
+
+.footer-pay .pay-link
+{
+    display: block;
+    margin: 20px 0;
+}
+}
+
+
+
+@media(max-width:992px)
+{
+  
+.last-b-r .last-card
+{
+   
+    width:50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+     border: none;
+    
+}
+
+
+.last-b-r .last-card
+{
+   
+   
+    border: none;
+    
+}
+.last-box .last-b-l
+{
+    border: none;
+}
+
+.last-box{
+    border: 0.6px solid rgb(190, 178, 178);
+}
+.card-i-r
+{
+    justify-content: left;
+}
+.card-i-r .card
+{
+    width:33.33%;
+
+}
+
+.card-item-2{
+    flex-direction: column;
+
+}
+.card-i-l
+{
+    width: 100%;
+}
+.card-i-r
+{
+width: 100%;
+}
+.card-i-l-c
+{
+    flex-direction: column;
+}
+.c-1,.c-2
+{
+    margin-left: 10px;
+    padding-left: 10px;
+    
+}
+.card-i-l a
+{
+    margin: 10px;
+}
+.main
+{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-l
+{
+    width: 100%;
+    
+}
+
+.main-r
+{
+    width: 100%;
+    padding-top: 20px;
+}
+
+.main-l .main-ser
+{
+    width:100%;
+
+}
+
+.main-l .main-ser input
+{
+    width:80%;
+
+}
+.sec
+{
+    flex-wrap: wrap;
+    
+}
+.sec p
+{
+    width: 50%;
+    
+    border-right: 0.8px solid rgb(96, 93, 93);
+    text-align:left;
+    border: none;
+    padding: 10 10px;
+}
+
+}
+
+
+@media(max-width:768px)
+{
+    .nav-info
+    {
+        display:flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+    
+    .nav-info .search
+    {
+        display: none;
+    }
+    .nav-info .bar
+    {
+        width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    
+    .nav-info .icon .fa-user
+    {
+   display: none;
+    }
+    
+    .banner 
+    {
+     flex-direction: column;
+    }
+
+    .banner .banner-l
+    {
+   width: 100%;
+    }
+    
+    .banner .banner-r
+    {
+        margin-top: 20px;
+   width: 100%;
+    }
+    .banner-2 
+    {
+        flex-direction: column;
+    }
+    .banner-2 .banner-2-l,.banner-2-r
+    {
+        width: 100%;
+    }
+
+    .card-item-2
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-i-l
+    {
+        width: 100%;
+    }
+    .card-i-r
+    {
+        width: 100%;
+    }
+    .card-i-r .card
+    {
+        width: 50%;
+    }
+    .banner-3
+    {
+        flex-direction: column;
+    }
+    .banner-3 .banner-3-l
+    {
+        width: 100%;
+    }
+    
+    .banner-3 .banner-3-c
+    {
+        width: 100%;
+    }
+    
+    .banner-3 .banner-3-r
+    {
+        width: 100%;
+    }
+    
+.last-box
+{
+    display: flex;
+    flex-direction: column  ;
+   
+}
+
+.last-box .last-b-l
+{
+    
+    width: 100%;
+    
+}
+
+.last-b-r
+{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-l
+{
+    width: 100%;
+    
+}
+
+.main-r
+{
+    width: 100%;
+    padding-top: 20px;
+}
+ 
+.sec 
+{
+    flex-direction: column;
+    
+}
+.sec p,.sec p:last-child
+{
+    width:100%;
+    padding: 10px;
+}
+
+.footer-i-l
+{
+    justify-content: center;
+}
+
+.footr-i-r
+{ 
+    
+    flex-direction: column;
+    
+}
+
+
+
+
+}
+
+@media(max-width:610px)
+{
+  .main
+  {
+    padding:0 10px;
+  }
+.main-l
+{
+    width: 100%;
+    
+}
+
+.main-r
+{
+    width: 100%;
+    padding-top: 20px;
+}
+
+.main-r img
+{
+    width: 100%;
+}
+
+}

@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 30px 0;
+        }
+
+        .header .nav ul {
+            display: flex;
+            gap: 70px;
+            list-style: none;
+        }
+
+        .header .nav ul li a {
+            text-decoration: none;
+        }
+
+        .header .nav-link {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .header .nav-link a {
+            text-decoration: none;
+        }
+
+        .header .nav-link button {
+            padding: 10px 20px;
+            color: blue;
+        }
+
+        .header .bar {
+            display: none;
+        }
+
+
+        .con {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .con p {
+            border-radius: 20px;
+            background-color: rgb(238, 234, 234);
+            display: inline;
+            padding: 5px 0;
+        }
+
+        .con p span {
+            border-radius: 20px;
+            background-color: green;
+            padding: 5px;
+        }
+
+        .con h1 {
+            margin: 30px;
+        }
+
+        .con span {
+            color: gray;
+            word-spacing: 3px;
+            font-size: 18px;
+
+        }
+
+        .con .search input {
+            height: 40px;
+            width: 70%;
+            padding: 2px;
+
+        }
+
+        .con .search {
+            background-color: rgb(227, 148, 31);
+            margin: 30px 40%;
+            width: 300px;
+        }
+
+        .con .search button {
+
+            height: 40px;
+            background-color: blue;
+            width: 30%;
+            color: aliceblue;
+
+        }
+
+        .graph2 {
+            margin: 0 100px;
+        }
+
+        .graph2 img {
+            width: 100%;
+        }
+
+        .vactor {
+            margin-top: 85px;
+        }
+
+        .vactor p {
+            text-align: center;
+        }
+
+        .vactor .vactor-im {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .vactor .vactor-im img {
+            width: 10%;
+        }
+
+        .timeline {
+            display: flex;
+            margin: 20px;
+
+        }
+
+        .timeline .timeline-l {
+            width: 60%;
+            border: 1px solid yellowgreen;
+            position: relative;
+        }
+
+        .timeline .timeline-l h2 {
+            margin: 30px 10px;
+        }
+
+        .tl-lm {
+            width: 50%;
+            margin: 20px 30px;
+        }
+
+        .tl-f {
+            display: flex;
+            align-items: center;
+        }
+
+        .tl-f i {
+            padding: 5px;
+            color: orange;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .tl-s {
+            border-left: 1px solid red;
+            padding: 15px 20px;
+            margin-left: 10px;
+        }
+
+        .tl-s p {
+            padding: 45px;
+            border: 1px solid gray;
+            border-radius: 15px;
+            margin: 20px 0;
+            font-size: 20px;
+        }
+
+        .tl-m2 {
+            border: 1px solid;
+            padding: 20px;
+            position: absolute;
+            width: 30%;
+            top: 34%;
+            left: 45%;
+            background-color: aliceblue;
+        }
+
+        .tl-m2 .pater {
+            border: 1px solid;
+            padding: 20px 20px 70px 20px;
+            margin: 40px 40px;
+        }
+
+
+        .tl-m2 button {
+            float: right;
+            padding: 10px 20px;
+            background-color: blue;
+            color: aliceblue;
+            margin-top: 10px;
+        }
+
+
+        .tl-m2 .tl-m2-user {
+            display: flex;
+            align-items: center;
+        }
+
+        .tl-m2 .tl-m2-user img {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .timeline-r {
+            padding: 50px;
+        }
+
+        .timeline-r .tl-r1 {
+            border-left: 6px solid blue;
+            background-color: rgb(210, 215, 222);
+            padding: 10px;
+            width: 80%;
+        }
+
+        .timeline-r .tl-r2 {
+            border-bottom: 0.5px solid gray;
+            padding: 20px;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .work {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .work-item {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 90px;
+            justify-content: center;
+            padding: 10px 100px;
+            text-align: left;
+            margin-top: 20px;
+
+        }
+
+        .it1 {
+            width: 20%;
+
+        }
+
+        .it1 i {
+            padding: 10px;
+            color: orange;
+            border-radius: 50%;
+            background-color: rgb(109, 129, 109);
+            margin-bottom: 15px;
+
+        }
+
+        .it1 h4 {
+            margin: 10px 0;
+
+        }
+
+        .graph-3 {
+            display: flex;
+            padding: 100px 200px;
+        }
+
+        .graph-3 .g-l {
+            width: 30%;
+            text-align: left;
+        }
+
+        .graph-3 .g-l h1 {
+            margin: 20px 0;
+        }
+
+        .graph-3 .g-l button {
+            padding: 10px 15px;
+            margin: 20px 0;
+            background-color: blue;
+            color: white;
+        }
+
+        .graph-3 .g-r {
+            width: 70%;
+
+            height: 300px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .graph-3 .g-r img {
+            width: 70%;
+
+
+        }
+
+        .cost {
+            text-align: center;
+        }
+
+        .cost h1 {
+            margin: 20px;
+        }
+
+        .cost-user {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .cost-user .user1 {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+          
+        }
+
+        .user1 img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .uu2
+        {
+            border-top: 4px solid;
+        }
+        .paybox
+        {
+            background-color: blueviolet;
+            margin: 20px 210px;
+            display: flex;
+            padding:  50px 100px;
+            border-radius: 15px;
+            align-items: center;
+        }
+        .paybox h1
+        {
+            width: 50%;
+        }
+        .paybox .g-p
+        {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        gap: 20px;
+        }
+        .main-footer
+        {
+            background-color: rgb(26, 26, 28);
+        }
+        .footer
+        {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 50px;
+           
+        }
+        
+        .footer h4
+        {
+            color: white;
+            margin-bottom:15px;
+        }
+        
+        .footer ul
+        {
+list-style: none;
+        }
+        
+        .footer ul li
+        {
+            margin: 10px;
+        }
+        
+        .footer ul li a
+        {
+            text-decoration: none;
+            color: white;
+        }
+        .latt-p
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 100px;
+            border-top:1px solid gray ;
+            color: white;
+            margin-top: 80px;
+        }
+        
+        .latt-p .f-icon i
+        {
+            margin: 15px;
+        }
+
+        @media(max-width:420px)
+        {
+            .con .search
+            {
+                margin:50px;
+            }
+            .nav
+            {
+                display: none;
+            }
+            .header .nav-link
+            {
+                display: none;
+            }
+  .header .bar{
+    display: block;
+  }
+  .timeline
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeline .timeline-l {
+    width: 100%;
+
+}
+
+
+.timeline-r {
+    width: 100%;
+}
+
+
+ 
+.work-item {
+    
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+
+}
+
+.it1 {
+    width: 100%;
+
+}
+.graph-3
+{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+ .g-l
+{
+    width:100% !important;
+    padding: 0;
+    margin: 0;
+    background-color: aqua;
+}
+
+.tl-m2 {
+    border: 1px solid;
+    padding: 10px;
+    position: absolute;
+    width: 65%;
+    top: 53%;
+    left: 30%;
+    background-color: aliceblue;
+    font-size: 14px;
+}
+
+.user1 img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.g-r{
+    width: 100%;
+}
+        
+        
+        .graph-3 .g-r img {
+            width: 100%;
+
+
+        }
+        .u2
+        {
+            display: none !important;
+            margin-top: 20px;
+        }
+        .paybox{
+            flex-direction: column;
+            width: 100% !important;
+            margin: 0;
+            padding: 10px;
+        }
+        .g-p
+        {
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <h1>team.flow</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="">How it Works<i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li><a href="">Product<i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Resources<i class="fa-solid fa-angle-down"></i></a></li>
+
+            </ul>
+        </div>
+
+        <div class="nav-link">
+            <a href="">Log in</a>
+            <button>Get started free</button>
+        </div>
+
+        <div class="bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </div>
+
+    <div class="con">
+
+        <p><span>Save 90%</span>Get account of $59<i class="fa-solid fa-angle-down fa-rotate-270"></i> </p>
+        <h1>Manage the teamb <br>everyone wants to be on
+        </h1>
+        <span>Simple platform that lets you master what great managers do best, <br>
+            as develop trust, collaborate, and drive team performance.
+        </span>
+
+
+        <div class="search"><input type="text" placeholder="name@yourcompany.com"><button>Try it free</button></div>
+    </div>
+
+
+
+    <div class="graph2">
+        <img src="graph2.png" alt="">
+    </div>
+
+    <div class="vactor">
+        <p>TRUSTED BY OVER 10.000+ WORLD’S BEST TEAMS</p>
+        <div class="vactor-im">
+            <img src="google.png" alt="">
+            <img src="airbnd.png" alt="">
+            <img src="facebook.png" alt="">
+            <img src="hunp.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="timeline">
+
+        <div class="timeline-l">
+
+            <h2>Timeline</h2>
+            <div class="tl-lm">
+                <div class="tl-f">
+                    <i class="fa-solid fa-message"></i>
+                    <div class="tm-fe">
+                        <h3>Benchmarking</h3>
+                        <p>sent to Denise on 06/02/2020</p>
+                    </div>
+
+                </div>
+
+                <div class="tl-s">
+                    <p>@Denise Can we add three more analyses?</p>
+                    <p>@Denise Can we add three more analyses?</p>
+                    <p>@Denise Can we add three more analyses?</p>
+                </div>
+                <div class="tl-f">
+                    <i class="fa-solid fa-message"></i>
+                    <div class="tm-fe">
+                        <h3>Benchmarking</h3>
+                        <p>sent to Denise on 06/02/2020</p>
+                    </div>
+
+                </div>
+
+                <div class="tl-m2">
+                    <div class="tl-m2-user">
+                        <img src="user.jpeg" alt="">
+                        <div class="user-c">
+                            <h3>Benchmarking</h3>
+                            <p>sent to Denise on 06/02/2020</p>
+                        </div>
+
+                    </div>
+
+                    <p class="pater">@Peter Thanks for review!I will review the comments and submit a new project.</p>
+                    <button>send</button>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-r">
+
+            <div class="tl-r1">
+                <h4>Survey your team</h4>
+                <p>Powerful questions that get to the heart of how team members really feel.</p>
+            </div>
+
+            <div class="tl-r2">
+                <h4>Survey your team</h4>
+                <p>Powerful questions that get to the heart of how team members really feel.</p>
+            </div>
+
+
+            <div class="tl-r2">
+                <h4>Survey your team</h4>
+                <p>Powerful questions that get to the heart of how team members really feel.</p>
+            </div>
+
+
+            <div class="tl-r2">
+                <h4>Survey your team</h4>
+                <p>Powerful questions that get to the heart of how team members really feel.</p>
+            </div>
+
+
+            <div class="tl-r2">
+                <h4>Survey your team</h4>
+                <p>Powerful questions that get to the heart of how team members really feel.</p>
+            </div>
+
+
+            <div class="tl-r2">
+                <h4>Survey your team</h4>
+                <p>Powerful questions that get to the heart of how team members really feel.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="work">
+        <h1>Make your work easier</h1>
+
+        <div class="work-item">
+
+            <div class="it1">
+                <i class="fa-solid fa-message"></i>
+                <h4>Team Surveys & Reports</h4>
+                <p>Short, anonymous surveys track your team’s needs weekly so you can focus.</p>
+            </div>
+
+
+            <div class="it1">
+                <i class="fa-solid fa-message"></i>
+                <h4>Team Surveys & Reports</h4>
+                <p>Short, anonymous surveys track your team’s needs weekly so you can focus.</p>
+            </div>
+
+
+            <div class="it1">
+                <i class="fa-solid fa-message"></i>
+                <h4>Team Surveys & Reports</h4>
+                <p>Short, anonymous surveys track your team’s needs weekly so you can focus.</p>
+            </div>
+
+
+
+            <div class="it1">
+                <i class="fa-solid fa-message"></i>
+                <h4>Team Surveys & Reports</h4>
+                <p>Short, anonymous surveys track your team’s needs weekly so you can focus.</p>
+            </div>
+
+
+            <div class="it1">
+                <i class="fa-solid fa-message"></i>
+                <h4>Team Surveys & Reports</h4>
+                <p>Short, anonymous surveys track your team’s needs weekly so you can focus.</p>
+            </div>
+
+
+            <div class="it1">
+                <i class="fa-solid fa-message"></i>
+                <h4>Team Surveys & Reports</h4>
+                <p>Short, anonymous surveys track your team’s needs weekly so you can focus.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="graph-3">
+
+        <div class="g-l">
+
+            <h1>We work how you
+                work everyday</h1>
+            <p>Since the easiest things to use actually get used,
+                we adapts to the way your team works – not the other way around.</p>
+            <button>Get started free</button>
+
+        </div>
+        <div class="g-r">
+            <img src="graph3.png" alt="">
+        </div>
+    </div>
+
+    <div class="cost">
+        <h1>Why customers love <br>
+            working with us</h1>
+        <p>“It's amazing what has helped me learn about my team. <br>
+            I don't worry about blindspots anymore, and 1-on-1s have never <br>
+            been more productive. The team loves it.”</p>
+
+
+        <div class="cost-user">
+            <div class="user1 uu2">
+
+                    <img src="user.jpeg" alt="">
+                    <div class="user-c">
+                        <h3>Benchmarking</h3>
+                        <p>sent to Denise on 06/02/2020</p>
+                    </div>
+
+                </div>
+
+            
+            <div class="user1 u2">
+
+                
+                    <img src="user.jpeg" alt="">
+                    <div class="user-c">
+                        <h3>Benchmarking</h3>
+                        <p>sent to Denise on 06/02/2020</p>
+                    </div>
+
+                </div>
+            
+            <div class="user1 u2">
+
+
+                <img src="user.jpeg" alt="">
+                <div class="user-c">
+                    <h3>Benchmarking</h3>
+                    <p>sent to Denise on 06/02/2020</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="paybox">
+
+        <h1>84% of employees who use <br>
+            trust their direct manager</h1>
+
+            <div class="g-p">
+                <img src="google-play.png" alt="">
+                <img src="app-store.png" alt="">
+            </div>
+
+    </div>
+
+    <div class="main-footer">
+
+  <div class="footer">
+
+      <ul>
+        <h4>Company</h4>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Careers</a></li>
+        <li><a href="">Careers</a></li>
+        
+      </ul>
+
+
+      
+      <ul>
+        <h4>Company</h4>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Careers</a></li>
+        
+        
+      </ul>
+
+
+
+      
+      <ul>
+        <h4>Company</h4>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Blog</a></li>
+        
+        <li><a href="">Careers</a></li>
+        
+      </ul>
+
+
+      
+      <ul>
+        <h4>Install App</h4>
+        <li><img src="google-play.png" alt=""></li>
+        <li><img src="google-play.png" alt=""></li>
+      </ul>
+
+
+       
+  </div>
+
+  <div class="latt-p">
+    <p>© 2020 - All rights reserved</p>
+    <div class="f-icon">
+
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+  </div>
+
+</div>
+</body>
+
+</html>

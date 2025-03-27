@@ -1,0 +1,185 @@
+@media(max-width:1300px)
+{
+    .nav
+    {
+        display: none !important;
+    }
+    
+  .logo-part .logo-info
+  {
+    
+    grid-template-columns: 7fr 2fr !important;
+    
+    justify-content: space-between;
+    margin-left: 20px;
+   
+  }
+
+     .logo-part .logo-info .select
+     {
+        display: none;
+     }
+     .menubar
+     {
+        display: none !important;
+     }
+     .logo-part
+     {
+      margin-bottom: 10px;
+     }
+}
+
+
+@media(max-width:1170px)
+{
+   .m-category
+   {
+      visibility: hidden;
+   }
+   .main
+   {
+      padding: 0 20px !important;
+   }
+   
+.product-item
+{
+   
+   grid-template-columns:1fr 1fr 1fr !important;
+  
+}
+.footer-info p
+{
+   margin-top:30px;
+   padding: 0px;
+   font-size: 15px;
+}
+
+.copyright
+{
+   grid-template-columns: 1fr 1fr !important;
+   margin: 20px 10px !important;
+}
+
+.item-box-ls
+{
+   margin: 20px !important;
+}
+.item-box-ls .item-b-r
+{
+    grid-template-columns: 1fr 1fr !important;
+}
+.item-b-i1
+{
+   display: grid;
+   grid-template-columns: 1fr !important;
+}
+
+.foote-link
+{
+   grid-template-columns: 1fr !important;
+}
+.footer-link-p1
+{
+   margin-top: 20PX;
+}
+.footer-banner
+{
+   grid-template-columns: 1fr !important;
+   margin:10px !important;
+   width: 100%;
+
+}
+.f-br
+{
+   height: 270px;
+}
+.f-search
+{
+   width: 100% !important;
+}
+ .logo-part .logo-icon .fa-use
+{
+ display: none !important;
+}
+.box-card
+{
+   grid-template-columns: 1fr 1fr !important;
+}
+}
+
+
+@media(max-width:820px)
+{
+   .main-l
+{
+   display: none;
+}
+
+.main-r
+{
+   width:100vw;
+   margin-top: 20px;
+   padding: 20px;
+}
+.footer-icon
+{
+   grid-template-columns: 1fr !important;
+   justify-content: center;
+}
+.f-icon-r
+{
+   grid-template-columns: 1fr !important;
+   margin-top: 20px;
+   text-align: center;
+   gap: 30px;
+}
+.search
+{
+   display: none;
+}
+
+.logo-part  
+{
+   display: grid;
+   grid-template-columns: 10fr 15fr 30fr !important;
+   justify-content: space-between !important;
+   align-items: center;
+   gap: 80px;
+   
+}
+
+.logo-part .bar
+{
+display: block !important;
+}
+
+.post-banner
+{
+   
+   grid-template-columns: 1fr !important;
+
+}
+}
+
+
+@media(max-width:750px)
+{
+
+
+   .item-box-ls 
+   {
+       grid-template-columns:1fr !important;
+       border: none !important;
+   }
+   .item-b-i1
+   {
+      border: none !important;
+   }
+    
+.product-item
+{
+   
+   grid-template-columns:1fr 1fr  !important;
+  
+}
+}

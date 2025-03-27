@@ -1,0 +1,1406 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    /* text-decoration: none; */
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.ad
+{
+    background-color: rgb(41, 41, 93);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    
+}
+
+
+.nav-link
+{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link .nav
+{
+width: 40%;
+}
+
+.nav-link .nav ul
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 30px;
+}
+
+.nav-link .nav-right
+{
+    width: 60%;
+    display: flex;
+    justify-content:center;
+}
+
+
+.nav-link .nav-right .right-1
+{
+    
+    display: flex;
+    border-right: 1px solid ;
+    padding: 0 5px;
+    margin: 5px 0;
+    
+}
+
+.nav-link .nav-right .right-1 i,p
+{
+
+    padding:5px;
+    
+}
+
+
+.nav-link .nav-right .right-2
+{
+
+
+    border-right: 1px solid;
+    padding: 5px 7px;
+
+    
+}
+
+
+.nav-link .nav-right .right-2 span
+{
+color: rgb(0, 255, 255);
+padding: 0 3px;
+    
+}
+
+.nav-link .nav-right .right-3
+{
+display: flex;  
+    
+}
+
+
+
+
+.nav-link .nav-right .right-3 ul
+{
+display: flex;
+color: rgb(0, 0, 0);
+align-items: center;
+
+
+}
+
+
+.nav-link .nav-right .right-3  ul li
+{
+
+padding: 4px 2px;
+margin:2px;
+
+
+}
+
+
+.nav-link .nav-right .right-3  ul li .dropdown
+{
+
+display:none;
+background-color: aliceblue;
+border: 1px solid;
+position: absolute;
+padding: 5px;
+}
+
+.nav-link .nav-right .right-3  ul li .dropdown li
+{
+
+padding: 5px;
+border-bottom: 1px solid;
+}
+
+
+.nav-link .nav-right .right-3  ul li:hover .dropdown
+{
+   display: block; 
+   z-index: 1;
+}
+.nav-link .nav-right .right-3 a i
+{
+transform: rotate(270deg);
+padding: 2px 5px;
+font-size: 13px;
+}
+
+
+.nav-info
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.logo
+{
+    width:200px;
+}
+.logo img
+{
+    width: 100%;
+}
+
+.logo p
+{
+    font-size: 12px;
+}
+.bar{
+    display:none;
+    align-items: center;
+}
+
+.bar i
+{
+    font-size: 25px;
+}
+.bar .bar-2 
+{
+    margin-left: 18px;
+}
+ .bar .bar-2 img
+{
+    width: 150px;
+}
+
+.bar .bar-2 p
+{
+    font-size: 12px;
+}
+
+.location
+{
+    display: flex;
+    padding: 2px 5px;
+    border: 1px solid;
+    padding: 13px;
+    border-radius:15px ;
+}
+
+.location .loc-con p
+{
+font-size: 10px;
+padding: 6px 0;
+
+}
+.location .loc-icon
+{
+ margin: 0 20px;
+ 
+ text-align: center;
+
+ 
+
+}
+.loc-icon i
+{
+    transform: rotate(270deg);
+    
+    margin-top: 10px;
+}
+
+.search
+{
+    width: 30%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    background-color: rgb(207, 214, 220);
+    height: 50px;
+    border-radius: 10px;
+
+}
+.search input
+{
+width: 100%;
+height: 50px;
+outline: none;
+border: none;
+background-color: transparent;
+padding: 0 5px;
+
+}
+
+
+.search i
+{
+
+padding: 10px;
+
+}
+
+.icon 
+{
+display: flex;
+gap: 10px;
+}
+.icon i
+{
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+.icon p
+{
+    font-size: 20px;
+}
+
+.icon  .fa-cart-shopping
+{
+    color: red;
+    position: relative;
+    background-color: rgb(179, 142, 142);
+}
+
+
+.icon  .fa-cart-shopping p
+{
+    position: absolute;
+    top:-10px;
+    left: 23px;
+    font-size: 8px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.menubar
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 100px;
+    color: white;
+    border-bottom: 1px solid rgb(62, 59, 59);
+    
+}
+
+.menubar .menu-left
+{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    background-color: blueviolet;
+    border-radius: 30px;
+}
+
+.menubar .menu-left i
+{
+    padding: 5px;
+    margin: 0 10px;
+}
+
+
+
+.menubar .menu-right 
+{
+    
+    width: 70%;
+    
+}
+
+.menubar .menu-right ul
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.menubar .menu-right ul li{
+    padding: 10px;
+    
+    border-radius: 15px;
+    /* transition: 12s; */
+}
+
+.menubar .menu-right ul li a{
+    color: black;
+    
+}
+
+.menubar .menu-right ul li a i{
+    padding:0  10px;
+    
+}
+
+.menubar .menu-right ul li:hover {
+    background-color: rgb(162, 195, 175);
+    border-radius: 15px;
+
+}
+
+.menubar .menu-right ul li:hover a {
+    color: aqua;
+
+}
+
+.menubar .menu-right >ul li >.homesub 
+{
+    position: absolute;
+    margin-top:15px;
+    display: none;
+    padding: 30px 60px 30px 20px;
+    background-color: rgb(238, 244, 244);
+    
+}
+
+.menubar .menu-right ul li   .homesub a{
+    padding: 7px;
+
+}
+.menubar .menu-right ul li   .homesub a{
+    display: block;
+    color: black;
+    
+}
+.menubar .menu-right >ul li:hover .homesub
+{
+    display: block;
+}
+
+.menubar .menu-right >ul li .homesub a:hover
+{
+    color: aqua;
+}
+
+
+.menubar .menu-right >ul li >.shop-sub
+{
+    position: absolute;
+    margin-top:15px;
+    display: none;
+   
+    padding: 30px 60px 30px 20px;
+    background-color: rgb(238, 244, 244);
+
+    
+}
+
+.menubar .menu-right >ul li >.shop-sub h1
+{
+    color: aqua;
+}
+
+
+.menubar .menu-right >ul li:hover .shop-sub
+{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    
+}
+section
+{
+    padding:  0 150px;
+}
+
+/* .frist{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.frist-l
+{
+    display: flex;
+    align-items: center;
+} */
+
+.banner
+{
+     display: flex;
+     justify-content: space-between;
+     margin-top: 40px;
+     
+}
+.banner .banner-l
+{
+    width:63%;
+    height: 500px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background: url("../image/banner.jpg");
+    border-radius: 10px;
+    padding: 70px;
+    
+}
+.banner .banner-l p
+{
+    font-size: 15px;
+    
+}
+
+.banner .banner-l p span
+{
+    font-size: 15px;
+    background:linear-gradient(to right,rgb(54, 214, 94),rgb(231, 224, 224));
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+.banner .banner-l h1
+{
+    font-size: 35px;
+    margin-top: 20px;
+    
+}
+
+.banner .banner-l p:nth-child(3)
+{
+    font-size: 15px;
+    margin-top: 20px;
+    
+}
+
+.banner .banner-l .price    
+{
+    font-size: 15px;
+    margin-top: 15px;
+    
+}
+
+.banner .banner-l b
+{
+    font-size: 35px;
+    color: brown;
+    
+    
+}
+
+.banner .banner-l button
+{
+    display:block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: rgb(26, 75, 123);
+    color: white;
+    border-radius: 20px;
+    
+}
+
+.banner .banner-l img
+{
+    width: 100%;
+    height: 100%;
+}
+.banner .banner-r 
+{
+    width: 33%;
+    height: 500px;
+}
+.banner .banner-r img
+{
+width: 100%;
+height: 100%;
+}
+
+.banner-2
+{
+
+    display: flex;
+    margin-top: 30px;
+    gap: 25px;
+    
+}
+
+.banner-2-l
+{
+   width: 50%;
+    height: 270px;
+    background: url("../image/baneer2-l.jpg");
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    border-radius: 10px;
+}
+.banner-2-l 
+{
+    
+display: flex;
+justify-content: right;
+align-items: center;
+padding: 0 20px;
+    
+}
+
+.banner-2-l .b-l-c p
+{
+    font-size: 25px;
+    
+}
+
+.banner-2-l .b-l-c p:nth-child(3)
+{
+    font-size: 13px;
+    color: rgb(167, 159, 159);
+    
+}
+
+.banner-2-l .b-l-c h1
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.banner-2-l .b-l-c button
+{
+    background-color: blue;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 5px;
+    
+}
+.banner-2-r
+{
+    background: url("../image/baneer2-r.webp");
+    background-size: cover ;
+    width: 50%;
+    height: 270px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 30px;
+}
+
+
+.banner-2-r .b-r-c p
+{
+    font-size: 25px;
+    
+}
+
+.banner-2-r .b-r-c p:nth-child(3)
+{
+    font-size: 13px;
+    color: rgb(167, 159, 159);
+    
+}
+
+.banner-2-r .b-r-c h1
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.banner-2-r .b-r-c button
+{
+    background-color: blue;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 5px;
+    
+}
+
+.Best-Sellers
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.Best-Sellers-r button
+{
+    padding: 6px 9px;
+    border-radius: 20px;
+    color: rgb(162, 167, 171);
+}
+
+.Best-Sellers-r button i
+{
+    padding: 0 3px;
+    
+    
+}
+
+.card-box 
+{
+   display: flex;
+  margin-top: 20px;
+   flex-grow: 1;
+   border: 1px solid rgb(205, 197, 197);
+   border-radius: 5px;
+   overflow: auto;
+   
+}
+
+.card-box .card
+{
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid rgb(199, 195, 190);
+}
+
+
+.card .im  img
+{
+width: 100%;
+}
+
+.card .im
+{
+position: relative;
+}
+
+.card .im p
+{
+    background-color: rgb(16, 208, 195);
+    color: aliceblue;
+    padding: 2px 5px;
+    position: absolute;
+    top: 0;
+}
+
+.card .im .rec
+{
+    background-color: rgb(108, 112, 111);
+    color: aliceblue;
+    padding: 4px 7px;
+    position: absolute;
+    top: 25px;
+    border-radius: 4px;
+}
+
+
+.card-box .card h4
+{
+    color: chartreuse;
+}
+
+.card-box .card .rank 
+
+{
+   display: flex;
+   align-items: center;
+    
+}
+
+
+.card-box .card .rank i{
+
+    color: rgb(221, 255, 0);
+}
+
+.card-box .card .price del{
+
+    color: rgb(159, 150, 150);
+}
+
+
+.card-box .card .price span{
+
+    color: rgb(255, 183, 0);
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.card-box .card button{
+
+    background-color: yellow;
+    border-radius: 15px;
+    width: 100%;
+    padding: 3px ;
+    margin-top: 5px;
+}
+
+.banner-im-box
+{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 15px;
+    
+    background-color: antiquewhite;
+}
+
+.banner-im-box .b-i-b-l
+{
+    width: 50%;
+    background-color: transparent;
+    padding: 25px 0;
+    color: green;
+}
+
+.banner-im-box .b-b-i
+{   height: 100px;
+    width: 30%;
+    padding: 10px 0;
+}
+
+.banner-im-box .b-b-i img
+{   width: 100%;
+    height: 100%;
+
+}
+
+.banner-im-box .b-b-b
+{   width:20%;
+    text-align: right;
+    background-color: transparent;
+    padding: 25px 8px;
+  
+
+}
+
+.banner-im-box .b-b-b button
+{   
+    background-color: green;
+    color: aliceblue;
+    padding: 4px 10px;
+    border-radius:15px ;
+
+
+}
+
+
+.card-item-2
+{
+   margin-top: 40px;
+    display: flex;
+    border: 1px solid rgb(227, 224, 224);
+}
+
+.card-i-l
+{
+    width: 30%;
+    border: 1px solid ;
+}
+
+.card-i-l .card-i-l-im
+{
+    padding: 30px;
+    background:url("../image/category-banner-1.jpg");
+    background-size: cover;
+}
+.card-i-l .card-i-l-im p
+{
+    margin-top: 10px;
+}
+
+.card-i-l .card-i-l-im h1
+{
+    margin-top: 10px;
+}
+
+.card-i-l .card-i-l-im button
+{
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom:110px;
+}
+
+.card-i-l   .card-i-l-c
+{
+    display: flex;
+    padding: 40px 10px;
+}
+
+.card-i-l   .card-i-l-c .c-1
+{
+    width: 50%;
+    padding-top: 20px;
+    
+}
+.card-i-l   .card-i-l-c .c-1 a
+{
+    display: block ;
+    margin-top:20px;
+    color: black;
+    
+}
+
+.card-i-l   .card-i-l-c .c-1 a:hover
+{
+    
+    color: rgb(226, 13, 13);
+}
+
+.card-i-l   .card-i-l-c .c-2
+{
+    width: 50%;
+    padding: 20px;
+}
+.card-i-l   .card-i-l-c .c-2 a
+{
+    display: block ;
+    margin-top:20px;
+    color: black;
+}
+
+.card-i-l   .card-i-l-c .c-2 a:hover
+{
+    
+    color: rgb(226, 13, 13);
+}
+
+.card-i-l i
+{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+.card-i-r
+{
+    display: flex;
+    
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+ .card-i-r .card
+{
+    width: 25%;
+    border: 1px solid;
+    padding: 10px;
+    
+}
+
+.card-i-r .card .price del{
+
+    color: rgb(159, 150, 150);
+}
+
+
+.card-i-r .card .price span{
+
+    color: rgb(255, 183, 0);
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+
+
+.card .im .rec
+{
+    background-color: rgb(108, 112, 111);
+    color: aliceblue;
+    padding: 4px 7px;
+    position: absolute;
+    top: 25px;
+    border-radius: 4px;
+}
+
+
+.card-i-r .card h4
+{
+    color: chartreuse;
+}
+
+.card-i-r .card .rank 
+
+{
+   display: flex;
+   align-items: center;
+    
+}
+
+
+.card-i-r .card .rank i{
+
+    color: rgb(221, 255, 0);
+}
+
+
+.card-i-r .card button
+{
+    width: 100%;
+    background-color: blue;
+    color: aliceblue ;
+    padding: 4px ;
+    border-radius:20px;
+    display: none;
+}
+
+.card-i-r .card:hover  button
+{
+    display: block;
+}
+
+
+
+.super-dic
+{
+    margin-top: 30px;
+    padding: 20px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.super-dic  p a
+{
+    font-size: 20px;
+    color: red;
+    text-decoration: underline;
+}
+
+
+.super-dic  p
+{
+    color: brown;
+}
+
+
+.super-dic  h6
+{
+    color: brown;
+    padding: 12px 18px;
+    border: 1px dotted red;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.super-dic  .super-p
+{
+    color: rgb(102, 99, 99);
+    font-size: 15px;
+}
+
+
+
+
+.banner-3
+{
+
+    display: flex;
+    margin-top: 30px;
+    gap: 25px;
+    
+}
+
+.banner-3-l
+{
+   width: 33.33%;
+    height: 270px;
+    background: url("../image/banner3-l.webp");
+    background-repeat: no-repeat;
+    border: 2px solid;
+    background-size: cover;
+    border-radius: 10px;
+}
+.banner-3-l 
+{
+    
+display: flex;
+justify-content:left;
+align-items: center;
+padding: 0 20px;
+    
+}
+
+.banner-3-l .b3-l-c p
+{
+    font-size: 25px;
+    
+}
+
+.banner-3-l .b3-l-c p:nth-child(3)
+{
+    font-size: 13px;
+    color: rgb(167, 159, 159);
+    
+}
+
+.banner-3-l .b3-l-c h1
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.banner-3-l .b3-l-c button
+{
+    background-color: blue;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 5px;
+    
+}
+.banner-3-r
+{
+    background: url("../image/banner3-r.jpg");
+    background-size: cover ;
+    width: 33.33%;
+    height: 270px;
+    border-radius: 10px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    padding: 0 30px;
+}
+
+
+.banner-3-r .b3-r-c p
+{
+    font-size: 25px;
+    
+}
+
+.banner-3-r .b3-r-c p:nth-child(3)
+{
+    font-size: 13px;
+    color: rgb(167, 159, 159);
+    
+}
+
+.banner-3-r .b3-r-c h1
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.banner-3-r .b3-r-c button
+{
+    background-color: blue;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 5px;
+    
+}
+
+
+
+.banner-3-c
+{
+    background: url("../image/banner3-c.webp");
+    background-size: cover ;
+    width: 33.33%;
+    height: 270px;
+    border-radius: 10px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    padding: 0 30px;
+}
+
+
+.banner-c-r .b3-c-c p
+{
+    font-size: 25px;
+    
+}
+
+.banner-3-c .b3-c-c p:nth-child(3)
+{
+    font-size: 13px;
+    color: rgb(167, 159, 159);
+    
+}
+
+.banner-3-c .b3-c-c h1
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.banner-3-c .b3-c-c button
+{
+    background-color: blue;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 5px;
+    
+}
+
+
+.last-box
+{
+    display: flex;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+.last-box .last-b-l
+{
+    
+    width: 25%;
+    border:0.8px  solid rgb(133, 129, 129);
+    padding: 10px;
+}
+
+
+
+.last-box .last-b-l .l-im img
+{
+    width: 100%;
+    
+}
+
+.last-box .last-b-l .l-im 
+{
+    padding: 20px;
+}
+
+
+
+.last-b-r
+{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.last-b-r .last-card
+{
+   
+    width:25%;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    border: 0.8px solid rgb(133, 129, 129);
+    
+}
+
+.last-b-r .last-card .r-im img
+{
+    width: 100%;
+}
+
+
+
+.main
+{
+    width: 100%;
+    display: flex;
+    background-color: blue;
+    padding: 50px 100px 0 100px;
+    margin-top: 50px;
+}
+
+.main-l
+{
+    width: 50%;
+    color: white;
+}
+
+
+.main-l .main-p
+{
+    color: rgb(158, 153, 147);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.main-l .main-ser
+{
+   display: flex;
+   align-items: center;
+    width: 60%;
+background: rgb(255, 255, 255);
+background-color: rgb(253, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+.main-l .main-ser input
+{
+    width:70%;
+    height: 50px;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+}
+
+.main-l .main-ser button
+{
+    
+    
+    height: 50px;
+    padding: 20px;
+    border-radius: 20px 20px;
+    background-color: blue;
+    color: #fff7f7;
+}
+
+.main-l .main-ser i
+{
+    padding:10px;
+    color: white;
+    font-size: 20px;
+    color: black;
+}
+
+
+
+.main-r
+{
+    width: 50%;
+
+}
+
+
+.main-r img
+{
+    width: 100%;
+    height: 100%;
+
+}
+
+.sec
+{
+    display: flex;
+    background-color: #ffffff;
+    border-bottom:1px solid rgb(7, 7, 7);
+    padding: 40px 0;
+    margin:0 100px;
+}
+.sec p
+{
+    width: 25%;
+    border-right: 0.8px solid rgb(96, 93, 93);
+    text-align: center;
+}
+.sec p i
+{
+    padding: 0 8px;
+}
+
+.sec p:last-child
+{
+    width: 25%;
+    border:none;
+    
+}
+
+.footer-link
+{
+    display: flex;
+    margin: 100px;
+    flex-wrap: wrap;
+}
+
+
+.footer-link .f-l1
+{
+    width: 20%;
+}
+
+
+.footer-link .f-l1 p
+{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+.footer-link .f-l1 a
+{
+    display: block;
+    font-size: 14px;
+    color: rgb(75, 72, 68);
+    margin-top: 10px;
+    padding-left:5px ;
+}
+.footre-icon
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    padding-bottom: 50px;
+    border-bottom: 0.8px solid rgb(172, 165, 165);
+}
+.footer-i-l
+{
+     display: flex;
+     align-items: center;
+     color: rgb(96, 91, 91);
+     
+}
+
+.footer-i-l i
+{
+     padding: 5px 20px;
+     
+}
+
+.footer-i-l h1
+{
+     color: rgb(28, 27, 27);
+     
+}
+
+.footr-i-r
+{
+display: flex;
+justify-content: center;
+gap: 25px;
+align-items: center;
+background-color: white;
+}
+
+.footr-i-r .f-r3 i
+{
+  padding: 7px;
+  column-gap: 15px;
+  color: blue;
+}
+
+.footr-i-r .f-r3 ,.f-r2
+{
+  display: flex;
+  gap: 10px;
+}
+
+
+.footr-i-r .f-r1
+{
+    text-align: right;
+}
+
+.footer-pay
+{
+    display: flex;
+    margin: 20px 100px;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.footer-pay p
+{
+    color: gray;
+    font-size: 14px;
+}
+.pay-link
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
